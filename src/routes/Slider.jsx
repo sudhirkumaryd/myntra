@@ -10,21 +10,27 @@ const Slider = () => {
     const imgnumber = sliderfolder.imagestatus;
     const dispatch=useDispatch();
     return (
-        <div className="cover">
-
-            <div>
-                {img.map((one) => <img src={one} style={(imgnumber === img.indexOf(one)+1) ? { display: "block" } : { display: "none" }} alt="sab thik tah hai" />)}
-            </div>
-            <div className="dotdev">
-                {img.map((one) => <div className="dot" style={(imgnumber === img.indexOf(one)+1) ? { backgroundColor: "#837676" } : null}    ></div>)}
-              </div>
-
-            <div className="button_box">
-                <button className="left" style={(imgnumber === 1) ? { visibility: "hidden" } : null} onClick={()=>dispatch(sliderAction.sidehandleleft())} ><GrPrevious /></button>
-                <button className="right" style={(imgnumber === img.length) ? { visibility: "hidden" } : null} onClick={()=>dispatch(sliderAction.sidehandleright())} ><GrNext /></button>
-            </div>
-
-        </div>
+        <div id="carouselExampleInterval" className="carousel slide hisetforslider " data-bs-ride="carousel">
+  <div className="carousel-inner mt-5">
+    <div className="carousel-item active"  >
+      <img src={img[1]} class="d-block w-100" alt="..."/>
+    </div>
+    <div className="carousel-item" >
+      <img src={img[5]} class="d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item">
+      <img src={img[4]} class="d-block w-100" alt="..." />
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
 
     )
 
