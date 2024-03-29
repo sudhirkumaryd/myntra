@@ -20,45 +20,38 @@ function Header()
        sethome(0)
     }
   return (
-  <header>
-    <div className="threedish">
-<button type="button" className="btn  btn-light"onClick={homehandler  } > <IoReorderThreeSharp/> </button>
-   {chome===1 && <Homeicon/>} 
-    </div>
-      
-        <div className="logo_container">
-            <Link to="/"><img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/></Link>
-        </div>
-        <nav className="nav_bar">
-            <Link to="/Men">Men</Link>
-            <Link to="/Women">Women</Link>
-            <a href="#">Kids</a>
-            <a href="#">Home & Living</a>
-            <Link to="/Beauty">Beauty</Link>
-            <a href="#">Studio <sup>New</sup></a>
-        </nav>
-        <div className="search_bar">
-            <span className="material-symbols-outlined search_icon">search</span>
-            <input className="search_input" placeholder="Search for products, brands and more"/>
-        </div>
-        <div className="action_bar">
-            <div className="action_container">
-            <IoMdPerson />
-                <span className="action_name">Profile</span>
-            </div>
+    <div className="container mbc ">
+    <header className="d-flex flex-wrap align-items-center  justify-content-center justify-content-md-between py-3 mb-4 ">
+      <div className="col-md-3 mb-2 mb-md-0">
+        <Link to="/" className="d-inline-flex link-body-emphasis text-decoration-none">
+        <img className="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"/>
+        </Link>
+      </div>
 
-            <div className="action_container">
-            <FaRegHeart />
-                <span className="action_name">Wishlist</span>
-            </div>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        {/* <li><Link to="#" className="nav-link px-2 link-secondary">Home</Link></li> */}
+        <li><Link to="/Men" className="nav-link px-2">Men</Link></li>
+        <li><Link to="/Women" className="nav-link px-2">Women</Link></li>
+        <li><Link to="#" className="nav-link px-2">Kids</Link></li>
+        <li><Link to="/Beauty" className="nav-link px-2">Beauty</Link></li>
+        <li><Link to="#" className="nav-link px-2">Studio <sup>New</sup></Link></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        
+     
 
             <Link className="action_container" to="/Beg">
             <FiShoppingCart/>
                 <span className="action_name">Bag</span>
                 <span className="bag-item-count">{itemnumber.length}</span>
             </Link>
-        </div>
+
+      </div>
+      
     </header>
+  </div>
+
   )
 }
 export default Header
