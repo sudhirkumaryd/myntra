@@ -151,8 +151,8 @@ header {
   margin: 10px 0px;
 }
 .item-container {
-  width: 180px;
-  margin: 10px;
+  width: 170px;
+  margin-top: 10px;
 }
 .item-image {
   width: 100%;
