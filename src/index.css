@@ -267,6 +267,7 @@ a.action_container:link {
   line-height: 1.42857143;
 }
 .bag-item-container {
+  
   margin-bottom: 8px;
   background: #fff;
   font-size: 14px;
@@ -274,7 +275,7 @@ a.action_container:link {
   border-radius: 4px;
   position: relative;
   padding: 12px 12px 0;
-  max-width:370px;
+  max-width:360px;
 }
 
 @media only screen and (max-width: 768px) {
