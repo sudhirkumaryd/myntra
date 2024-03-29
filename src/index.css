@@ -274,6 +274,7 @@ a.action_container:link {
   border-radius: 4px;
   position: relative;
   padding: 12px 12px 0;
+  max-width:370px;
 }
 
 @media only screen and (max-width: 768px) {
