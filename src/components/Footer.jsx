@@ -1,50 +1,18 @@
 const Footer=()=>
 {
     return (
-        <footer>
-        <div className="footer_container">
-            <div className="footer_column">
-                <h3>ONLINE SHOPPING</h3>
-
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
-            </div>
-
-            <div className="footer_column">
-                <h3>ONLINE SHOPPING</h3>
-
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
-            </div>
-
-            <div className="footer_column">
-                <h3>ONLINE SHOPPING</h3>
-
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
-            </div>
-        </div>
-        <hr/>
-
-        <div className="copyright">
-            © 2023 www.myntra.com. All rights reserved.
-        </div>
-    </footer>
+        <div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+  </footer>
+</div>
     )
 }
 export default Footer
