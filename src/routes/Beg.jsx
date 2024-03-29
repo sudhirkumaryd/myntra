@@ -10,19 +10,16 @@ const Beg = () => {
   })
   return (
     <><main>
-      <div className="bag-page">
+      <div className="bag-page d-flex flex-wrap align-items-center  justify-content-center">
+        <div>
       <div className="bag-items-container">
-        {finalitems.map((item)=><BegItem   key={item.id} item={item}/>)}
-        
-        </div>
-        <BegSummery/>
-
+      {finalitems.map((item)=><BegItem   key={item.id} item={item}/>)}
+      </div>
+      </div>
+      <BegSummery/>
       </div>
     </main>
     </>
   )
-
-
-
 }
 export default Beg
