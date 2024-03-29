@@ -147,11 +147,11 @@ header {
 }
 
 .items-container {
-  width: 80%;
-  margin: 40px 10%;
+  width: 100%;
+  margin: 10px 0px;
 }
 .item-container {
-  width: 250px;
+  width: 180px;
   margin: 10px;
 }
 .item-image {
@@ -244,17 +244,17 @@ a.action_container:link {
 .bag-items-container {
   display: inline-block;
   width: 64%;
-  padding-right: 20px;
+  padding: 20px;
   border-right: 1px solid #eaeaec;
-  padding-top: 32px;
+  
   color: #282c3f;
   font-size: 13px;
   line-height: 1.42857143;
 }
 
 .bag-page {
-  width: 75%;
-  margin-left: 12.5%;
+  width: 100%;
+  margin-left: 0%;
 }
 
 .bag-summary {
@@ -265,6 +265,47 @@ a.action_container:link {
   color: #282c3f;
   font-size: 13px;
   line-height: 1.42857143;
+}
+.bag-item-container {
+  margin-bottom: 8px;
+  background: #fff;
+  font-size: 14px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  position: relative;
+  padding: 12px 12px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .bag-summary{
+    width: 100%;
+    padding: 15px;
+  }
+  .bag-items-container {
+    width: 100%;
+    border: none;
+   
+  }
+  .bag-item-container
+  {
+     padding: 20px;
+  }
+  .mbc{
+    margin-bottom: 6rem;
+  }
+  
+}
+@media only screen and (min-width: 768px) 
+{
+  .bag-items-container {
+    width: auto;
+    
+   .hisetforslider{
+   
+    height: 200px;
+   }
+  }
 }
 
 .bag-details-container {
@@ -315,15 +356,7 @@ a.action_container:link {
   cursor: pointer;
 }
 
-.bag-item-container {
-  margin-bottom: 8px;
-  background: #fff;
-  font-size: 14px;
-  border: 1px solid #eaeaec;
-  border-radius: 4px;
-  position: relative;
-  padding: 12px 12px 0;
-}
+
 
 .item-left-part {
   position: absolute;
