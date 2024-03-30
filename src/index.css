@@ -275,7 +275,7 @@ a.action_container:link {
   border-radius: 4px;
   position: relative;
   padding: 12px 12px 0;
-  max-width:360px;
+  max-width:auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -291,6 +291,7 @@ a.action_container:link {
   }
   .bag-item-container
   {
+    max-width:315px;
      padding: 20px;
   }
   .mbc{
